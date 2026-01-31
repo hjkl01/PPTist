@@ -65,7 +65,7 @@
       </template>
     </div>
     <div class="btns">
-      <Button class="btn export" type="primary" @click="execExport()"><IconDownload /> 导出 PPTX</Button>
+      <Button class="btn export" type="primary" @click="execExport()"><i-icon-park-outline:download /> 导出 PPTX</Button>
       <Button class="btn close" @click="emit('close')">关闭</Button>
     </div>
 

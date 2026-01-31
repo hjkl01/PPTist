@@ -12,11 +12,11 @@
         @mouseleave="startTimer()"
       >
         <div class="icons">
-          <IconAttention theme="filled" size="18" fill="#faad14" v-if="type === 'warning'" />
-          <IconCheckOne theme="filled" size="18" fill="#52c41a" v-if="type === 'success'" />
-          <IconCloseOne theme="filled" size="18" fill="#ff4d4f" v-if="type === 'error'" />
-          <IconInfo theme="filled" size="18" fill="#1677ff" v-if="type === 'info'" />
-          <IconLoadingFour class="loading-icon" theme="filled" size="18" fill="#d14424" v-if="type === 'loading'" />
+          <i-icon-park-solid:attention style="font-size: 18px; color: #faad14;" v-if="type === 'warning'" />
+          <i-icon-park-solid:check-one style="font-size: 18px; color: #52c41a;" v-if="type === 'success'" />
+          <i-icon-park-solid:close-one style="font-size: 18px; color: #ff4d4f;" v-if="type === 'error'" />
+          <i-icon-park-solid:info style="font-size: 18px; color: #1677ff;" v-if="type === 'info'" />
+          <i-icon-park-outline:loading-four class="loading-icon" style="font-size: 18px; color: #d14424;" v-if="type === 'loading'" />
         </div>
         <div class="content">
           <div class="title" v-if="title">{{ title }}</div>
@@ -27,7 +27,7 @@
             class="close-btn"
             @click="close()"
           >
-            <IconCloseSmall />
+            <i-icon-park-outline:close-small />
           </span>
         </div>
       </div>
@@ -37,16 +37,6 @@
 
 <script lang="ts" setup>
 import { onMounted, ref, onBeforeMount } from 'vue'
-import { icons } from '@/plugins/icon'
-
-const {
-  IconAttention,
-  IconCheckOne,
-  IconCloseOne,
-  IconInfo,
-  IconLoadingFour,
-  IconCloseSmall,
-} = icons
 
 const props = withDefaults(defineProps<{
   id: string

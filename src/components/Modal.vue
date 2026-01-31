@@ -8,7 +8,7 @@
           @before-enter="contentVisible = true"
         >
           <div class="modal-content" v-show="visible" :style="contentStyle">
-            <span class="close-btn" v-if="closeButton" @click="close()"><IconClose /></span>
+            <span class="close-btn" v-if="closeButton" @click="close()"><i-icon-park-outline:close /></span>
             <slot v-if="contentVisible"></slot>
           </div>
         </Transition>
@@ -19,9 +19,6 @@
 
 <script lang="ts" setup>
 import { computed, nextTick, ref, watch, useTemplateRef, type CSSProperties } from 'vue'
-import { icons } from '@/plugins/icon'
-
-const { IconClose } = icons
 
 const props = withDefaults(defineProps<{
   visible: boolean

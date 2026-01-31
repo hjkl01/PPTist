@@ -6,7 +6,7 @@
     v-contextmenu="contextmenusThumbnails"
   >
     <div class="add-slide">
-      <div class="btn" @click="createSlide()"><IconPlus class="icon" />添加幻灯片</div>
+      <div class="btn" @click="createSlide()"><i-icon-park-outline:plus class="icon" />添加幻灯片</div>
       <Popover trigger="click" placement="bottom-start" v-model:value="presetLayoutPopoverVisible" center>
         <template #content>
           <Templates 
@@ -14,7 +14,7 @@
             @selectAll="({ slides, theme }) => { insertAllTemplates({ slides, theme }); presetLayoutPopoverVisible = false }"
           />
         </template>
-        <div class="select-btn"><IconDown /></div>
+        <div class="select-btn"><i-icon-park-outline:down /></div>
       </Popover>
     </div>
 
@@ -404,7 +404,7 @@ const contextmenusThumbnailItem = (): ContextmenuItem[] => {
 
   .icon {
     margin-right: 3px;
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 .thumbnail-list {
