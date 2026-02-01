@@ -318,7 +318,7 @@ const setBackgroundImage = () => {
 }
 
 .clip {
-  width: 260px;
+  width: 250px;
   font-size: 12px;
 
   .title {

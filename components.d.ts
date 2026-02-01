@@ -11,6 +11,12 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    'ICustom:click': typeof import('~icons/custom/click')['default']
+    'ICustom:fileJpg': typeof import('~icons/custom/file-jpg')['default']
+    'ICustom:filePpt': typeof import('~icons/custom/file-ppt')['default']
+    'ICustom:filePptist': typeof import('~icons/custom/file-pptist')['default']
+    'ICustom:left': typeof import('~icons/custom/left')['default']
+    'ICustom:right': typeof import('~icons/custom/right')['default']
     'IIconParkOutline:addText': typeof import('~icons/icon-park-outline/add-text')['default']
     'IIconParkOutline:alignBottom': typeof import('~icons/icon-park-outline/align-bottom')['default']
     'IIconParkOutline:alignHorizontally': typeof import('~icons/icon-park-outline/align-horizontally')['default']

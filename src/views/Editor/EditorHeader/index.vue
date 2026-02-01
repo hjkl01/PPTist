@@ -5,7 +5,7 @@
         <template #content>
           <div class="main-menu">
             <div class="ai-menu" @click="openAIPPTDialog(); mainMenuVisible = false">
-              <div class="icon"><i-icon-park-twotone:click style="color: #ffc158;" /></div>
+              <div class="icon"><i-custom:click /></div>
               <div class="aippt-content">
                 <div class="aippt"><span>AIPPT</span></div>
                 <div class="aippt-subtitle">输入一句话，智能生成演示文稿</div>
@@ -20,7 +20,7 @@
                 importPPTXFile(files)
                 mainMenuVisible = false
               }">
-                <span class="icon"><i-icon-park-twotone:file-pdf style="color: #d14424;" /></span>
+                <span class="icon"><i-custom:file-ppt /></span>
                 <span class="label">PPTX</span>
                 <span class="sub-label">（仅供测试）</span>
               </FileInput>
@@ -28,7 +28,7 @@
                 importJSON(files)
                 mainMenuVisible = false
               }">
-                <span class="icon"><i-icon-park-twotone:file-jpg style="color: #d14424;" /></span>
+                <span class="icon"><i-custom:file-jpg /></span>
                 <span class="label">JSON</span>
                 <span class="sub-label">（仅供测试）</span>
               </FileInput>
@@ -36,7 +36,7 @@
                 importSpecificFile(files)
                 mainMenuVisible = false
               }">
-                <span class="icon"><i-icon-park-twotone:notes style="color: #d14424;" /></span>
+                <span class="icon"><i-custom:file-pptist /></span>
                 <span class="label">PPTIST</span>
                 <span class="sub-label">（专属格式）</span>
               </FileInput>

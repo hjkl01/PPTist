@@ -31,8 +31,8 @@
     />
 
     <div class="tools-left">
-      <i-icon-park-twotone:left-two class="tool-btn" @click="execPrev()" />
-      <i-icon-park-twotone:right-two class="tool-btn" @click="execNext()" />
+      <i-custom:left class="tool-btn" @click="execPrev()" />
+      <i-custom:right class="tool-btn" @click="execNext()" />
     </div>
 
     <div 
