@@ -3,7 +3,6 @@
     class="thumbnails"
     @mousedown="() => setThumbnailsFocus(true)"
     v-click-outside="() => setThumbnailsFocus(false)"
-    v-contextmenu="contextmenusThumbnails"
   >
     <div class="add-slide">
       <div class="btn" @click="createSlide()"><i-icon-park-outline:plus class="icon" />添加幻灯片</div>
@@ -28,6 +27,7 @@
       :disabled="editingSectionId"
       @end="handleDragEnd"
       itemKey="id"
+      v-contextmenu="contextmenusThumbnails"
     >
       <template #item="{ element, index }">
         <div class="thumbnail-container">
